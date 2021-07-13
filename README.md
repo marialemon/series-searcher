@@ -1,1 +1,1 @@
-# series-searcher
+# Series Searcher - Vanilla JavaScript

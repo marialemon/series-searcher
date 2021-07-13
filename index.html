@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de series</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <span class="icon">📺</span>
+      <h1 class="title">Adalab Prime</h1>
+    </header>
+    <main class="main">
+      <section class="input-section">
+        <h2 class="subtitle">Buscador de series</h2>
+        <form action="#" method="POST" class="form">
+          <input
+            class="input-search js-search"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Ej. Sense8"
+          />
+
+          <input class="input-submit js-button" type="submit" value="Buscar" />
+          <input
+            type="reset"
+            value="Resetear favoritos"
+            class="reset js-reset"
+          />
+        </form>
+      </section>
+
+      <section class="output-section">
+        <ul class="cards-section js-card-ul"></ul>
+
+        <div class="wrapper">
+          <h2 class="title-favorites">❤️ Favoritas</h2>
+
+          <ul class="favorites-section js-favorites-ul"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/global.js"></script>
+  </body>
+</html>

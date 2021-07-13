@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.header,
+.footer {
+  padding: 0.7rem 2rem;
+}
+
+.body {
+  background-color: whitesmoke;
+  color: #141414;
+}
+
+.header {
+  background-color: #ebebeb;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title,
+.icon {
+  font-size: 1.3rem;
+}
+
+.input-section {
+  padding: 1.4rem 1rem 3rem 1rem;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.input-search,
+.input-submit {
+  border: thin solid #00000050;
+  margin: 1.5rem 0.5rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.input-submit {
+  cursor: pointer;
+  background-color: #ffcc00;
+  padding: 0.8rem 1.8rem;
+}
+
+.reset {
+  cursor: pointer;
+  background-color: rgb(172, 0, 0);
+  color: white;
+  padding: 0.8rem 1.8rem;
+}
+
+.output-section {
+  height: 35vh;
+  margin: 1.5rem auto;
+  max-width: 1200px;
+
+  display: flex;
+
+  gap: 3rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.cards-section,
+.wrapper {
+  width: 50%;
+  padding: 0 1rem;
+}
+
+.cards-section,
+.favorites-section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 1rem;
+
+  overflow-x: auto;
+}
+
+.title-favorites {
+  font-size: 1rem;
+  position: absolute;
+  transform: translateY(-25px);
+}
+
+.card {
+  width: 155px;
+  height: 217px;
+}
+
+.favorite {
+  border: 5px solid rgb(230, 0, 0);
+}
+
+.delete {
+  cursor: pointer;
+  background-color: rgb(230, 0, 0);
+  border: thin solid white;
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  padding: 0.2rem;
+
+  text-align: center;
+  font-weight: 700;
+}
+
+.card-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .output-section {
+    padding-bottom: 2rem;
+    height: 100%;
+    flex-flow: column wrap;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .cards-section,
+  .favorites-section {
+    flex-flow: row wrap;
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .title-favorites {
+    font-size: 1rem;
+    text-align: center;
+    position: static;
+  }
+}
